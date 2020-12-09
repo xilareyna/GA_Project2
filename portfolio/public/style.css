@@ -1,6 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Megrim&display=swap");
 * {
-  background-color: lightblue;
   text-align: center;
-  margin: 10px;
+  margin: 1%;
   list-style: none;
+  font-family: "Forum", cursive;
+}
+body {
+  background-image: url("https://cdn.pixabay.com/photo/2017/09/12/22/06/background-2743842_1280.jpg");
+}
+header {
+  background-color: #3c0a4d;
+  text-decoration: none;
+  padding: 2%;
+  border-radius: 5px;
+  top: 0;
+}
+#headerLinks {
+  text-decoration: none;
+  background-color: #3c0a4d;
+  color: white;
+  font-size: 20px;
+  font-family: "Megrim", cursive;
+}
+#projectLink {
+  text-decoration: none;
+  font-size: 25px;
+  color: #3c0a4d;
+}
+
+#aboutP {
+  font-size: 20px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5%;
+  color: #434a56;
+  width: 43%;
+  margin: 0 auto;
+  box-shadow: 9px 10px 52px -12px rgba(0, 0, 0, 0.75);
+}
+.contactButtons {
+  text-align: center;
+  font-size: 20px;
+  border: 1px solid #3c0a4d;
+  height: 55px;
+  width: 150px;
+  margin: 40px;
+  border-radius: 4px;
+  background-color: #3c0a4d;
+  box-shadow: 9px 10px 52px -12px rgba(0, 0, 0, 0.75);
+}
+.contactLinks {
+  text-decoration: none;
+  background-color: #3c0a4d;
+  color: white;
+}
+#contactP {
+  font-size: 30px;
+  background-color: white;
+  border-radius: 5px;
+  color: #3c0a4d;
+  padding: 8%;
+  width: 30%;
+  margin: 0 auto;
+}
+
+h1 {
+  padding: 15px;
+  font-size: 50px;
+  color: white;
+}
+.homePage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.indexLi {
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  overflow-wrap: break-word;
+  width: 181px;
+  height: 200px;
+  box-shadow: 9px 10px 52px -12px rgba(0, 0, 0, 0.75);
+}
+
+#deleteBtnIndex {
+  text-align: center;
+  font-size: 15px;
+  border: 1px solid #3c0a4d;
+  height: 30px;
+  width: 140px;
+  margin: 10px;
+  border-radius: 4px;
+  background-color: #3c0a4d;
+  color: white;
+  box-shadow: 9px 10px 52px -12px rgba(0, 0, 0, 0.75);
+  overflow-wrap: break-word;
+}
+
+#createBtn {
+  text-align: center;
+  font-size: 15px;
+  border: 1px solid #3c0a4d;
+  height: 30px;
+  width: 140px;
+  margin: 10px;
+  border-radius: 4px;
+  background-color: #3c0a4d;
+  color: white;
+  box-shadow: 9px 10px 52px -12px rgba(0, 0, 0, 0.75);
+}
+#forms {
+  font-size: 17px;
+}
+.newFormCont {
+  background-color: white;
+  border-radius: 5px;
+  color: #3c0a4d;
+  padding: 35px;
+  width: 443px;
+  margin: 0 auto;
+}
+.newFormBack {
+  font-size: 20px;
+}
+.editContainer {
+  background-color: white;
+  border-radius: 5px;
+  color: #3c0a4d;
+  padding: 35px;
+  width: 443px;
+  margin: 0 auto;
+}
+#editBtn {
+  text-align: center;
+  font-size: 15px;
+  border: 1px solid #3c0a4d;
+  height: 30px;
+  width: 140px;
+  margin: 10px;
+  border-radius: 4px;
+  background-color: #3c0a4d;
+  color: white;
+  box-shadow: 9px 10px 52px -12px rgba(0, 0, 0, 0.75);
+  text-decoration: none;
+}
+.showPage {
+  background-color: white;
+  border-radius: 5px;
+  color: #3c0a4d;
+  padding: 35px;
+  width: 443px;
+  margin: 0 auto;
+}
+#showBtn,
+#showLink {
+  text-align: center;
+  font-size: 15px;
+  border: 1px solid #3c0a4d;
+  height: 30px;
+  width: 140px;
+  margin: 10px;
+  border-radius: 4px;
+  background-color: #3c0a4d;
+  color: white;
+  box-shadow: 9px 10px 52px -12px rgba(0, 0, 0, 0.75);
+}
+.showRtEdit {
+  text-decoration: none;
+  color: white;
+}
+.projLinks {
+  width: 100%;
+  height: 100%;
+}
+footer {
+  color: white;
+  position: relative;
+  bottom: -94px;
+}
+#footerLink {
+  text-decoration: none;
+  color: white;
 }

@@ -67,11 +67,11 @@ app.get("/", (req, res) => {
 });
 
 app.get("/about", (req, res) => {
-  res.send("All you need to know!");
+  res.render("About");
 });
 
 app.get("/contact", (req, res) => {
-  res.send("Contact me!");
+  res.render("Contact");
 });
 
 //___________________

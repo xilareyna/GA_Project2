@@ -9,21 +9,28 @@ class Show extends React.Component {
         stylesheet="/style.css"
         js="/app.js"
       >
-        <p>
-          {this.props.project.title}
+        <p class="showPage">
+          {/* <iframe src={this.props.project.link} class="projLinks"></iframe> */}
+
           <br />
           {this.props.project.description}
           <br />
-          <a href={this.props.project.link} target="_blank">
-            Link to project
-          </a>
+          <button id="showLink">
+            <a
+              href={this.props.project.link}
+              target="_blank"
+              class="showRtEdit"
+            >
+              Link to project
+            </a>
+          </button>
+          <button id="showBtn">
+            <a
+              href={`/home/${this.props.project._id}/edit`}
+              class="showRtEdit"
+            >{`Edit ${this.props.project.title}`}</a>
+          </button>
         </p>
-        {/* <a href={"/home"}>Home</a> <br />
-        <a href={"/home/new"}>Create a new project</a> */}
-        <br />
-        <a
-          href={`/home/${this.props.project._id}/edit`}
-        >{`Edit ${this.props.project.title}`}</a>
       </AppLayout>
     );
   }
