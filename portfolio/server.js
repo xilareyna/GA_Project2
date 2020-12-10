@@ -25,7 +25,7 @@ const PORT = process.env.PORT || 3001;
 //___________________
 // How to connect to the database either via heroku or locally
 const MONGODB_URI =
-  process.env[MONGODB_URI] || "mongodb://localhost/" + `project2`;
+  process.env.MONGODB_URI || "mongodb://localhost/" + `project2`;
 
 console.log(process.env.MONGODB_URI);
 
@@ -183,7 +183,5 @@ app.get("/home/:id", (req, res) => {
 //Listener
 //___________________
 
-app.listen(process.env.PORT || PORT, () =>
-  console.log("Listening on port:", PORT)
-);
+app.listen(PORT, () => console.log("Listening on port:", PORT));
 // console.log(process.env.MONGODB_URI);
