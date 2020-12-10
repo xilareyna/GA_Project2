@@ -63,7 +63,7 @@ app.engine("jsx", require("express-react-views").createEngine());
 //___________________
 //localhost:3000
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.redirect("/home");
 });
 
 app.get("/about", (req, res) => {
