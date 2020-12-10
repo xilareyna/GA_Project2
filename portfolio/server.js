@@ -82,11 +82,12 @@ app.get("/contact", (req, res) => {
 app.get("/home", (req, res) => {
   Project.find({}, (err, allTabs) => {
     if (!err) {
-      console.log(allTabs);
+      // console.log(allTabs);
 
-      res.render("Index", {
-        project: allTabs,
-      });
+      res.send("hi");
+      // res.render("Index", {
+      //   project: allTabs,
+      // });
     } else {
       res.send(err);
     }
