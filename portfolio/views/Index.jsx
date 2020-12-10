@@ -6,7 +6,6 @@ class Index extends React.Component {
     // console.log(this.props.fruits);
     return (
       <AppLayout title="Portfolio" stylesheet="/style.css" js="/app.js">
-        <h1>hi xila- im working for you</h1>
         <ul className="homePage">
           {this.props.project.map((proj) => {
             return (
