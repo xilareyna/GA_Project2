@@ -6,7 +6,8 @@ class Index extends React.Component {
     // console.log(this.props.fruits);
     return (
       <AppLayout title="Portfolio" stylesheet="/style.css" js="/app.js">
-        <ul className="homePage">
+        <h1>hi xila- im working for you</h1>
+        {/* <ul className="homePage">
           {this.props.project.map((proj) => {
             return (
               <li class="indexLi">
@@ -17,8 +18,7 @@ class Index extends React.Component {
                 >
                   {proj.title.toUpperCase()}
                 </a>
-                {/* <br />
-                <iframe src={proj.link} class="projLinks"></iframe> */}
+                
                 <br />
                 {proj.description}
                 <br />
@@ -37,10 +37,13 @@ class Index extends React.Component {
               </li>
             );
           })}
-        </ul>
+        </ul> */}
       </AppLayout>
     );
   }
 }
 
-module.exports = Index;
+module.exports = Home;
+
+//{/* <br />
+//     <iframe src={proj.link} class="projLinks"></iframe> */}
