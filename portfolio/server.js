@@ -1,4 +1,6 @@
-require("dotEnv").config();
+if (process.env.NODE_ENV === "development") {
+  require("dotenv").config();
+}
 
 //___________________
 //Dependencies
@@ -23,7 +25,7 @@ const PORT = process.env.PORT || 3001;
 //___________________
 // How to connect to the database either via heroku or locally
 const MONGODB_URI =
-  process.env.MONGODB_URI || "mongodb://localhost/" + `project2`;
+  process.env[MONGODB_URI] || "mongodb://localhost/" + `project2`;
 
 console.log(process.env.MONGODB_URI);
 
