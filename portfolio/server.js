@@ -24,8 +24,9 @@ const PORT = process.env.PORT || 3001;
 //Database
 //___________________
 // How to connect to the database either via heroku or locally
-const MONGODB_URI =
-  process.env.MONGODB_URI || "mongodb://localhost/" + `project2`;
+const MONGODB_URI = process.env.MONGODB_URI;
+
+//|| "mongodb://localhost/" + `project2`
 
 console.log(process.env.MONGODB_URI);
 
@@ -81,16 +82,14 @@ app.get("/contact", (req, res) => {
 //___________________
 app.get("/home", (req, res) => {
   Proj.find({}, (err, allTabs) => {
-    res.render("Index", {
-      project: allTabs,
-    });
-
-    // if (!err) {
-    //   // console.log(allTabs);
-
-    // } else {
-    //   res.send(err);
-    // }
+    if (!err) {
+      // console.log(allTabs);
+      res.render("Index", {
+        project: allTabs,
+      });
+    } else {
+      res.send(err);
+    }
   });
 });
 
