@@ -81,14 +81,16 @@ app.get("/contact", (req, res) => {
 //___________________
 app.get("/home", (req, res) => {
   Proj.find({}, (err, allTabs) => {
-    if (!err) {
-      // console.log(allTabs);
-      res.render("Index", {
-        project: allTabs,
-      });
-    } else {
-      res.send(err);
-    }
+    res.render("Index", {
+      project: allTabs,
+    });
+
+    // if (!err) {
+    //   // console.log(allTabs);
+
+    // } else {
+    //   res.send(err);
+    // }
   });
 });
 
