@@ -12,7 +12,7 @@ const app = express();
 const db = mongoose.connection;
 const show = console.log;
 show("im cool");
-const Project = require("./models/schema.js");
+const Proj = require("./models/schema.js");
 
 //___________________
 //Port
@@ -80,8 +80,7 @@ app.get("/contact", (req, res) => {
 // Index
 //___________________
 app.get("/home", (req, res) => {
-  Project.find({}, (err, allTabs) => {
-    console.log(Project);
+  Proj.find({}, (err, allTabs) => {
     if (!err) {
       // console.log(allTabs);
       res.render("Index", {
@@ -105,7 +104,7 @@ app.get("/home/new", (req, res) => {
 //___________________
 
 app.delete("/home/:id", (req, res) => {
-  Project.findByIdAndRemove(req.params.id, (err, foundProject) => {
+  Proj.findByIdAndRemove(req.params.id, (err, foundProject) => {
     if (!err) {
       res.redirect("/home");
     } else {
@@ -119,7 +118,7 @@ app.delete("/home/:id", (req, res) => {
 //___________________
 
 app.put("/home/:id", (req, res) => {
-  Project.findByIdAndUpdate(
+  Proj.findByIdAndUpdate(
     req.params.id,
     req.body,
     { new: true },
@@ -138,7 +137,7 @@ app.put("/home/:id", (req, res) => {
 //___________________
 
 app.post("/home", (req, res) => {
-  Project.create(req.body, (err, createdProject) => {
+  Proj.create(req.body, (err, createdProject) => {
     if (!err) {
       res.redirect("/home");
     } else {
@@ -152,7 +151,7 @@ app.post("/home", (req, res) => {
 //___________________
 
 app.get("/home/:id/edit", (req, res) => {
-  Project.findById(req.params.id, (err, foundProject) => {
+  Proj.findById(req.params.id, (err, foundProject) => {
     if (!err) {
       res.render("Edit", {
         project: foundProject,
@@ -168,7 +167,7 @@ app.get("/home/:id/edit", (req, res) => {
 //___________________
 
 app.get("/home/:id", (req, res) => {
-  Project.findById(req.params.id, (err, foundProject) => {
+  Proj.findById(req.params.id, (err, foundProject) => {
     if (!err) {
       res.render("Show", {
         project: foundProject,

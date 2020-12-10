@@ -1,7 +1,7 @@
 const React = require("react");
 const AppLayout = require("./layout/AppLayout.jsx");
 
-class Home extends React.Component {
+class Index extends React.Component {
   render() {
     // console.log(this.props.fruits);
     return (
@@ -43,4 +43,4 @@ class Home extends React.Component {
   }
 }
 
-module.exports = Home;
+module.exports = Index;
