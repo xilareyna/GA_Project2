@@ -43,7 +43,7 @@ class Index extends React.Component {
   }
 }
 
-module.exports = Home;
+module.exports = Index;
 
 //{/* <br />
 //     <iframe src={proj.link} class="projLinks"></iframe> */}
