@@ -64,7 +64,7 @@ app.engine("jsx", require("express-react-views").createEngine());
 // Routes
 //___________________
 //localhost:3000
-app.get("/", (req, res) => {
+app.get("*", (req, res) => {
   res.redirect("/home");
 });
 
