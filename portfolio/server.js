@@ -64,7 +64,7 @@ app.engine("jsx", require("express-react-views").createEngine());
 // Routes
 //___________________
 //localhost:3000
-app.get("*", (req, res) => {
+app.get("/", (req, res) => {
   res.redirect("/home");
 });
 
@@ -183,5 +183,7 @@ app.get("/home/:id", (req, res) => {
 //Listener
 //___________________
 
-app.listen(PORT, () => console.log("Listening on port:", PORT));
+app.listen(process.env.PORT || PORT, () =>
+  console.log("Listening on port:", PORT)
+);
 // console.log(process.env.MONGODB_URI);
