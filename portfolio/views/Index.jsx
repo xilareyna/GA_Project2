@@ -7,7 +7,7 @@ class Index extends React.Component {
     return (
       <AppLayout title="Portfolio" stylesheet="/style.css" js="/app.js">
         <h1>hi xila- im working for you</h1>
-        {/* <ul className="homePage">
+        <ul className="homePage">
           {this.props.project.map((proj) => {
             return (
               <li class="indexLi">
@@ -18,7 +18,7 @@ class Index extends React.Component {
                 >
                   {proj.title.toUpperCase()}
                 </a>
-                
+
                 <br />
                 {proj.description}
                 <br />
@@ -37,7 +37,7 @@ class Index extends React.Component {
               </li>
             );
           })}
-        </ul> */}
+        </ul>
       </AppLayout>
     );
   }
